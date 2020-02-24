@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template is working</title>
+</head>
+<body>
+<h1>welcome to text analyzer</h1>
+<!-- CSRF : for encryption ------------------>
+<form action="/analyze/" method="post" >{% csrf_token %}
+    <textarea name="text" style="margin: 0px; width: 373px; height: 69px;"></textarea><br>
+    <input type="checkbox" name="removepunc">Remove punctuation<br>
+    <input type="checkbox" name="fullcaps">UPPERCASE<br>
+    <!--<input type="checkbox" name="removepunc">Remove punctuation<br>-->
+    <button type="submit">analyze text</button>
+</form>
+</body>
+</html>
